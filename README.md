@@ -4,7 +4,7 @@
 
 Submitted by: **Archit Rathi**
 
-Time spent: **2** hours spent in total
+Time spent: **7-8** hours spent in total
 
 ## User Stories
 
