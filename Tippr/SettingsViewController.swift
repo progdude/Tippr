@@ -23,7 +23,6 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func changePercent(sender: AnyObject) {
-        print("whats");
         
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setInteger(percents.selectedSegmentIndex, forKey: "default_tip_percentage")

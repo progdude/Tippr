@@ -26,6 +26,7 @@ class TipViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        totalLabel.becomeFirstResponder();
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +50,11 @@ class TipViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip);
         priceLabel.text = String(format: "$%.2f", total);
         perPersonLabel.text = String(format: "$%.2f", perPerson);
+        
+        let defaults = NSUserDefaults.standardUserDefaults();
+        defaults.setDouble(bill, forKey: "bill amount");
+        defaults.setDouble(tip, forKey: "tip amount");
+        defaults.synchronize();
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -59,9 +65,13 @@ class TipViewController: UIViewController {
         let tipValue = defaults.integerForKey("default_tip_percentage")
         percentControl.selectedSegmentIndex = tipValue;
         
-        peopleField.text = "1";
+        totalLabel.text = defaults.stringForKey("bill amount");
+        tipLabel.text = defaults.stringForKey("tip amount");
+        peopleField.text = "2";
         
     }
+    
+    
     
     @IBAction func personChanged(sender: AnyObject) {
         var percents = [0.1,0.15,0.2];
@@ -75,6 +85,11 @@ class TipViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip);
         priceLabel.text = String(format: "$%.2f", total);
         perPersonLabel.text = String(format: "$%.2f", perPerson);
+        
+        let defaults = NSUserDefaults.standardUserDefaults();
+        defaults.setDouble(bill, forKey: "bill amount");
+        defaults.setDouble(tip, forKey: "tip amount");
+        defaults.synchronize();
     }
     
     @IBAction func changePercent(sender: AnyObject) {
