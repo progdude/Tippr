@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "373B1BE0ED10EAF5097B6F47F843D5CAAF1A9FEB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "373B1BE0ED10EAF5097B6F47F843D5CAAF1A9FEB" : 0,
+    "35674CC05D9B4D99A4EA9B220027EFD2983A3979" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8ADE0070-A73C-4820-85A8-C3303230C56F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "373B1BE0ED10EAF5097B6F47F843D5CAAF1A9FEB" : "Tippr\/",
+    "35674CC05D9B4D99A4EA9B220027EFD2983A3979" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Tippr",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tippr.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/progdude\/CodePath.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "35674CC05D9B4D99A4EA9B220027EFD2983A3979"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/progdude\/Tippr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "373B1BE0ED10EAF5097B6F47F843D5CAAF1A9FEB"
+    }
+  ]
+}

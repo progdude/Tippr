@@ -24,6 +24,10 @@ class TipViewController: UIViewController {
     
     @IBOutlet weak var peopleField: UITextField!
     
+    @IBOutlet var secondView: UIView!
+    
+    var currency = "";
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         totalLabel.becomeFirstResponder();
@@ -47,9 +51,9 @@ class TipViewController: UIViewController {
         var total=bill+tip;
         var perPerson = total/NSString(string: peopleField.text!).doubleValue;
         
-        tipLabel.text = String(format: "$%.2f", tip);
-        priceLabel.text = String(format: "$%.2f", total);
-        perPersonLabel.text = String(format: "$%.2f", perPerson);
+        tipLabel.text = String(format: currency+"%.2f", tip);
+        priceLabel.text = String(format: currency+"%.2f", total);
+        perPersonLabel.text = String(format: currency+"%.2f", perPerson);
         
         let defaults = NSUserDefaults.standardUserDefaults();
         defaults.setDouble(bill, forKey: "bill amount");
@@ -69,6 +73,14 @@ class TipViewController: UIViewController {
         tipLabel.text = defaults.stringForKey("tip amount");
         peopleField.text = "2";
         
+        var currencyFormatter = NSNumberFormatter();
+        currencyFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle;
+        currencyFormatter.locale = NSLocale.currentLocale();
+        var z = currencyFormatter.stringFromNumber(0)!
+        currency = z[z.startIndex.advancedBy(0)...z.startIndex.advancedBy(1)]
+        
+        
+        
     }
     
     
@@ -82,9 +94,9 @@ class TipViewController: UIViewController {
         var total=bill+tip;
         var perPerson = total/NSString(string: peopleField.text!).doubleValue;
         
-        tipLabel.text = String(format: "$%.2f", tip);
-        priceLabel.text = String(format: "$%.2f", total);
-        perPersonLabel.text = String(format: "$%.2f", perPerson);
+        tipLabel.text = String(format: currency+"%.2f", tip);
+        priceLabel.text = String(format: currency+"%.2f", total);
+        perPersonLabel.text = String(format: currency+"%.2f", perPerson);
         
         let defaults = NSUserDefaults.standardUserDefaults();
         defaults.setDouble(bill, forKey: "bill amount");
@@ -101,9 +113,9 @@ class TipViewController: UIViewController {
         var total=bill+tip;
         var perPerson = total/NSString(string: peopleField.text!).doubleValue;
         
-        tipLabel.text = String(format: "$%.2f", tip);
-        priceLabel.text = String(format: "$%.2f", total);
-        perPersonLabel.text = String(format: "$%.2f", perPerson);
+        tipLabel.text = String(format: currency+"%.2f", tip);
+        priceLabel.text = String(format: currency+"%.2f", total);
+        perPersonLabel.text = String(format: currency+"%.2f", perPerson);
     }
     /*
     // MARK: - Navigation

@@ -40,6 +40,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Pm-Jy-CzC"/>
+                    <connections>
+                        <outlet property="firstView" destination="8bC-Xf-vdC" id="JJK-YB-kar"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,6 +184,7 @@
                         <outlet property="perPersonLabel" destination="e0q-sI-TfL" id="8bA-gN-Ipj"/>
                         <outlet property="percentControl" destination="pI9-CU-9JN" id="y9o-Ji-4sf"/>
                         <outlet property="priceLabel" destination="dLJ-sG-Ylv" id="Wnd-0v-OE0"/>
+                        <outlet property="secondView" destination="WYn-qR-Y9q" id="RNb-He-V7V"/>
                         <outlet property="tipLabel" destination="FPm-LL-Hpy" id="KDC-DX-cS1"/>
                         <outlet property="totalLabel" destination="vbT-s4-Rri" id="U5N-eq-KTE"/>
                     </connections>
