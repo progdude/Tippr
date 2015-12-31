@@ -153,7 +153,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dLJ-sG-Ylv">
-                                <rect key="frame" x="229" y="366" width="71" height="21"/>
+                                <rect key="frame" x="222" y="366" width="92" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
                                 <color key="textColor" red="1" green="0.1281204691" blue="0.181833248" alpha="1" colorSpace="calibratedRGB"/>
